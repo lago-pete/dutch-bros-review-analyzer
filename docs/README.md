@@ -1,4 +1,5 @@
 # Dutch Bros Multi-Location Review Analysis Platform
+This is more of a test and a time to learn new tools. 
 
 An AI-powered analytics platform that aggregates and analyzes customer reviews across multiple Dutch Bros Coffee locations, providing actionable insights for regional managers and operators.
 
@@ -113,8 +114,6 @@ This project demonstrates:
 ##  Author
 
 **Peter Lagonegro**
-- GitHub: [lago_pete](https://github.com/lago-pete/dutch-bros-review-analyzer)
-- LinkedIn: [Your Profile](www.linkedin.com/in/peter-lagonegro-2728b0293)
 
 ---
 
