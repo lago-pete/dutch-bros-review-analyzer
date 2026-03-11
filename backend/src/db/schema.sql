@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS locations(
     id SERIAL PRIMARY KEY,
-    google_place_id VARCHAR(255),
-    name VARCHAR(255),
-    address VARCHAR(255),
+    google_place_id VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
     is_favorite BOOLEAN DEFAULT false,
     last_fetched TIMESTAMP DEFAULT NOW()
 );
