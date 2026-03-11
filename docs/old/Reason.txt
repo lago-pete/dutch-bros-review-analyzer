@@ -1,0 +1,4 @@
+With increased workload from school and work, personal projects have taken a backseat lately. With that in mind, I've redesigned this project to be focused and achievable, something I can realistically complete and be proud of.
+The goal was never to build something groundbreaking. It's about sharpening my skills in a practical setting.
+Specifically, I want to get comfortable making and debugging API calls, get hands-on experience with tools I haven't used before like Docker and deployment, and deepen my familiarity with Python frameworks.
+Simple scope, real skills, working application.
