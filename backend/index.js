@@ -2,13 +2,18 @@ const dotenv = require("dotenv");
 dotenv.config();  //What this does is find the .env file in your directory. It takes the values found on it and injects them into the process.env so that they may be used later. 
 
 
+
 const express = require("express");
+const locationRouter = require('./src/routes/locations')
 require('./src/db/init')
 
 
 const app = express();
-
 app.use(express.json());
+
+
+app.use('/locations',locationRouter)
+
 
 app.get("/health", (req, res) => {
   res.json({
