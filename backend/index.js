@@ -1,9 +1,10 @@
-const express = require("express");
 const dotenv = require("dotenv");
-require("./src/db/pool");
+dotenv.config();  //What this does is find the .env file in your directory. It takes the values found on it and injects them into the process.env so that they may be used later. 
+
+
+const express = require("express");
 require('./src/db/init')
 
-dotenv.config();
 
 const app = express();
 

@@ -11,3 +11,4 @@ const pool = new Pool({
 
 module.exports = pool;
 
+//pool is essentially the middleware between Express and Postgres. It allows for connections to stay open rather then opening a new one each time someone requests something. 
