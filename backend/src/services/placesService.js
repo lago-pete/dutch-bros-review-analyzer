@@ -20,4 +20,25 @@ const searchLocations = async (query) =>{
     }
 }
 
-module.exports = {searchLocations}
+const getLocationReviews = async (place_id) =>{
+    try{
+        const response = await axios.get(`https://places.googleapis.com/v1/places/${place_id}`,
+            {
+                headers:{
+                    'X-Goog-Api-Key': process.env.GOOGLE_PLACES_API_KEY,
+                    'X-Goog-FieldMask': 'reviews,rating',
+                }
+            }
+        )
+        return response.data
+    }catch(error){
+        console.error("This is the error:", error)
+        throw error
+    }
+}
+
+
+
+
+
+module.exports = {searchLocations, getLocationReviews}
